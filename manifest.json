@@ -11,7 +11,7 @@
   },
 
   "background": {
-    "scripts": ["eventPage.js"],
+    "scripts": ["eventPage.js","popup.js","dict.js"],
     "persistent": false
   },
   "browser_action": {
