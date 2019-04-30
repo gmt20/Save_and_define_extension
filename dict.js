@@ -34,11 +34,14 @@ request.onload = function() {
     console.log(first[0].definition)
 	const card = document.createElement('div')
     card.setAttribute('class', 'card')
+	card.style.outline = "thick outset #009999";
 
-    const label = document.createElement('label')
-    label.textContent = word
+    var label = document.createElement('label')
+    label.textContent = element;
+	label.style.fontWeight = 'bold';
+	
 
-    const p = document.createElement('p')
+    var p = document.createElement('p')
     p.textContent = first[0].definition
 	container.appendChild(card)
     card.appendChild(label)
