@@ -8,5 +8,9 @@ $(function(){
         win.focus();
         
     };
+	document.getElementById("clearList").onclick = function () {
+		chrome.storage.sync.set({'wordArray':[]}, function(){});
+		$('#word').text("No word saved!");
+    };
     
 });
