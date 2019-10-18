@@ -27,8 +27,8 @@ request.onload = function() {
   // Begin accessing JSON data here
   var data = JSON.parse(this.response)
   if (request.status >= 200 && request.status < 400) {
-	console.log(data['meaning'])
-	var meanobj = data['meaning']
+	console.log(data[0]['meaning'])
+	var meanobj = data[0]['meaning']
 	var sortedKeys = Object.keys(meanobj).sort();
 	var first = meanobj[sortedKeys[0]];
     console.log(first[0].definition)
